@@ -1,0 +1,98 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>TP 1 Découverte du réseau</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="TP1_decouverte_reseau"
+                  title="TP 1 Découverte du réseau"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Préambule" duration="0">
+        <p>Au cours de ce TP, vous vous familiariserez avec les paramètres réseau requis pour connecter votre PC à un réseau local et accéder à Internet (Web). L&#39;objectif de ce TP est de vous permettre de découvrir les paramètres réseau en vigueur sur votre ordinateur, ainsi que leur utilisation. Il vous offre, en outre, l&#39;occasion de voir la configuration et les pilotes de la carte réseau, ainsi que les paramètres TCP/IP pour une station de travail client tournant sous Linux dans un réseau Ethernet. Ces informations s&#39;avèrent particulièrement utiles lorsque vous éprouvez de la difficulté à vous connecter à un réseau ou lorsque vous installez une nouvelle station de travail.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Découverte du réseau de la machine" duration="0">
+        <ol type="1">
+<li>Êtes-vous connectés au réseau ? Comment le savez-vous ?</li>
+</ol>
+<p>Cliquez sur l&#39;onglet tableau de bord, puis dans Recherche taper terminal. Vous êtes en mode console (ligne de commande) sous Linux.</p>
+<ol type="1">
+<li>Quels sont les noms de la machine et de l&#39;utilisateur ? Cliquez sur l&#39;onglet Paramètres système – Réseau.  Attention ! Ne rien modifier sans l&#39;avis du professeur !</li>
+<li>Noter l&#39;adresse MAC de la carte réseau.</li>
+<li>A quoi correspondent ces chiffres et ces lettres ?</li>
+<li>Quel est le débit afficher ? 1. S&#39;agit-il d&#39;un débit réel ou théorique ? Pourquoi ? 1. Quelle est la configuration IP en cours ? 1. Pourquoi y-a-t-il deux onglets Filaire ? 1. Qu&#39;est-ce qu&#39;un serveur mandataire ? 1. Qu&#39;est-ce qu&#39;un serveur DNS ?</li>
+</ol>
+<p>Cliquer sur l&#39;onglet Configuration. Cliquer sur l&#39;onglet Paramètres IPv4</p>
+<ol type="1">
+<li>Quelles sont les différentes méthodes d&#39;adressage ? Attention, ne pas enregistrer les modifications !</li>
+<li>A quoi correspond le mode automatique DHCP ?</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Terminal" duration="0">
+        <p>En ligne de commande (dans le Terminal ), taper ifconfig </p>
+<ol type="1">
+<li>A quoi correspondent eth0, eth1 et lo ?</li>
+<li>De quel type de réseau local s&#39;agit-il ?</li>
+<li>Quelle est la carte réseau activée ?</li>
+<li>Expliquer le rôle d&#39;un serveur DHCP et d&#39;une passerelle.</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Installation d&#39;une version Linux sur VirtualBox" duration="0">
+        <h2 is-upgraded>Introduction</h2>
+<p>Dans un premier temps nous allons mettre en place notre environnement de travail. Pour cela nous allons créer une machine virtuelle à l&#39;aide de VirtualBox. Sur cette machine nous installerons le système d&#39;exploitation Linux.</p>
+<h2 is-upgraded>Tutoriel et questions</h2>
+<p>Naviguer sur le serveur NAS et choisissez un fichier .iso correspondant à une distribution Linux.</p>
+<p>Suivez les étapes du tutoriel ci-dessous. En parallèle, noter sur une feuille vos réponses aux questions ci-dessous : <a href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview" target="_blank">Installation de Ubuntu sur VirtualBox</a></p>
+<h2 is-upgraded>Questions</h2>
+<ol type="1">
+<li>Quel processeur est-il conseillé d&#39;avoir sur sa machine afin d&#39;installer Ubuntu 22.04.1 LTS ? Même question pour la taille de la RAM ?</li>
+<li>A quoi correspond l&#39;accronyme &#34;LTS&#34; dans le mot &#34;Ubuntu 22.04.1 LTS&#34; ?</li>
+<li>Que signifie l&#39;accronyme &#34;LTS&#34; en terme de sécurité et de maintenance sur cette version Ubuntu ?</li>
+</ol>
+<p>Supposons que l&#39;utilisateur place le curseur complètement à droite dans l&#39;image ci-dessous : <img src="img\\d2bfa82077bad436.png"></p>
+<ol type="1" start="4">
+<li>Que risque-t-il de se passer lorsque la machine virtuelle sera en fonctionnement ?</li>
+<li>Quelle est la différence d&#39;allocation mémoire entre un stockage dynamiquement alloué et un stockage de taille fixe ?</li>
+</ol>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
